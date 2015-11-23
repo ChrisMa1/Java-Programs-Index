@@ -1,4 +1,4 @@
-SampleAssignment
+Java Programs Index
 ================
 
-A Sample Assignment that will go through the workflow of gi
+A list of Chris Ma's Java programs . 
