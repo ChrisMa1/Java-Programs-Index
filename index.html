@@ -6,13 +6,18 @@
 		<base target="_blank">
 		<style type="text/css">
 			body {
-			  background-color: #333; color: #bbb; line-height: normal;
+			  /*background-color: #333;*/
+			  color: #bbb; 
+			  line-height: normal;
 			  font-family: Georgia, Lucida Grande, Lucida Sans, Arial, sans-serif;
-			  font-size: 14px; font-weight: normal; text-decoration: none;
-				  line-height: 1.5em;
+			  font-size: 14px; 
+			  font-weight: normal; 
+			  text-decoration: none;
+			  line-height: 1.5em;
+			  background-image: url("wallpaper.jpg");
 			}
-			a img { 
-				border: 0px solid black;
+			img { 
+				border: 5px solid gray;
 			}
 			a, a:link, a:visited, a:active { 
 				color: #cdcdcd; text-decoration: underline;
@@ -21,46 +26,72 @@
 				color: #efefef; text-decoration: underline;
 			}
 			h1 {
-			    font-family: "Segoe UI", Arial, Helvetica Neue, Verdana, Geneva, sans-serif;
+				font-family: "Segoe UI", Arial, Helvetica Neue, Verdana, Geneva, sans-serif;
 				width: 100%; letter-spacing: 0.1em;
 				margin-bottom: 1em; font-size: 2em;
+				color: white;
 			}
-			#content { 
-				margin: 0px auto 0px auto; padding: 25px 25px 15px 25px;
-				width: 800px; min-width: 300px; overflow: auto;
-				border-left: 1px solid #444; border-top: 1px solid #444; 
-				border-right: 1px solid #333; border-bottom: 1px solid #333;
-				background-color: #3d3d3d;
+			h3{
+				color: white;
 			}
+			#content{
+				padding-left: 50px;
+			}
+			#footer{
+				/*background-image: url("tape.jpg");*/
+				background-color: black;
+				position: fixed;
+				bottom:0;
+				left:0;
+				width: 100%;
+				text-align: center;
+				font-size: 17px;
+				color: gray;
+			    text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+				
+			}			
 		</style>
 	</head>
+	<header>
+		<!--<nav>
+			<ul>
+			<li><a href="http://chrisma1.github.io/projects/" ><img src="cds.png" width="40" border-width="2"></a></li>
+			<li><a href="http://chrisma1.github.io/projects/" ><h1>Chris Ma's Projects</h1></a></li>
+			</ul>
+		</nav>-->
+	</header>
 	<body>
-		<img border="5" align="right" src="cds.png" width="300" >
-		<h1>Chris Ma's Projects</h1>
-		<h3>Other Projects</h3>
-		<ul>
-			<li><a href="http://chrisma1.github.io/FOCUS" title="A simplistic work timer based on the Pomodoro Technique.">FOCUS</a></li>
-		</ul>
-		<br>
-		<h3>AP Computer Science Projects</h3>
-		<ul>
-			<li><a href="http://chrisma1.github.io/OriginalDesign" title="OriginalDesign">Original Design</a></li>
-			<li><a href="http://chrisma1.github.io/AsteroidsGame" title="AsteroidsGame">Asteroids Game</a></li>
-			<li><a href="http://chrisma1.github.io/Starfield" title="Starfield">Starfield</a></li>
-			<li><a href="http://chrisma1.github.io/Minesweeper" title="Minesweeper">Minesweeper</a></li>
-			<li><a href="http://chrisma1.github.io/FractalTree" title="FractalTree">Fractal Tree</a></li>
-			<li><a href="http://chrisma1.github.io/HexFractal" title="HexFractal">Hexagon Rug Fractal</a></li>
-			<li><a href="http://chrisma1.github.io/Lightning" title="Lightning">Lightning</a></li>
-		</ul>
-		<br>
+		<div id="content">
+			<img align="right" src="cds.png" width="300" >
+			<h1>Chris Ma's Projects</h1>
+			<h3>My Projects</h3>
+			<ul>
+				<li><a href="http://chrisma1.github.io/FOCUS" title="A simplistic work timer based on the Pomodoro Technique.">FOCUS</a></li>
+			</ul>
+			<br>
+			<h3>AP Computer Science Projects</h3>
+			Built with <a href="http://processing.org" title="Processing" target="_blank">Processing</a> 
+			and <a href="http://processingjs.org" title="Processing.js" target="_blank">Processing.js</a>
+			</p>
+			<ul>
+				<li><a href="http://chrisma1.github.io/OriginalDesign" title="OriginalDesign">Original Design</a></li>
+				<li><a href="http://chrisma1.github.io/AsteroidsGame" title="AsteroidsGame">Asteroids Game</a></li>
+				<li><a href="http://chrisma1.github.io/Starfield" title="Starfield">Starfield</a></li>
+				<li><a href="http://chrisma1.github.io/Minesweeper" title="Minesweeper">Minesweeper</a></li>
+				<li><a href="http://chrisma1.github.io/FractalTree" title="FractalTree">Fractal Tree</a></li>
+				<li><a href="http://chrisma1.github.io/HexFractal" title="HexFractal">Hexagon Rug Fractal</a></li>
+				<li><a href="http://chrisma1.github.io/Lightning" title="Lightning">Lightning</a></li>
+			</ul>
+			<br>
 
-		<p><a href="http://github.com/ChrisMa1/" title="Github - ChrisMa1" target="_blank">Chris's GitHub</a></p>
+			<p><a href="http://github.com/ChrisMa1/" title="Github - ChrisMa1" target="_blank">Chris's GitHub</a></p>
 
-		<p><a href="https://www.khanacademy.org/profile/christophergw07/projects" title="Khanacademy" target="_blank">Chris Ma on Khanacademy</a></p>
-		<p>
-
-		Built with <a href="http://processing.org" title="Processing" target="_blank">Processing</a> 
-		and <a href="http://processingjs.org" title="Processing.js" target="_blank">Processing.js</a>
-		</p>
+			<p><a href="https://www.khanacademy.org/profile/christophergw07/projects" title="Khanacademy" target="_blank">Chris Ma on Khanacademy</a></p>
+			<p>	
+		</div>
+		<div id="footer">
+			<p>This test website is janky still, send suggestions! 
+				Email me at <a style="text-decoration: none;" href="mailto:christopher_gw07@yahoo.com">christopher_gw07@yahoo.com</a></p>
+		</div>
 	</body>
 </html>
