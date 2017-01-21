@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>Chris Ma's Projects</title>
+		<title>Chris Ma</title>
 		<link rel="icon"  type="image/icon" href="cds.bmp" />
 		<base target="_blank">
 		<style type="text/css">
@@ -10,7 +10,7 @@
 			  height: 100%;
 			  background-image: url('wallpaper.jpg');
 			  background-size: cover;
-			  line-height: 110%;
+			  line-height: 120%;
 			  font-family: Georgia, Arial, sans-serif;
 			  font-size: 16px; 
 			  color: #bbb;
@@ -19,11 +19,9 @@
 			html {
 			height: 100%;
 			}
-			img { 
-				border: 5px solid gray;
-			}
 			a, a:link, a:visited, a:active { 
 				color: #bcbcbc;
+				text-decoration: none;
 			}
 			a:hover {
 				color: #efefef; transition: 0.5s;
@@ -31,28 +29,47 @@
 			h1 {
 				font-family: "Segoe UI", Arial, Verdana, sans-serif;
 				width: 100%; letter-spacing: 0.1em;
-				margin-bottom: 1em; font-size: 2em;
+				margin-bottom: 1em; font-size: 1.5em;
 				color: white;
+				padding-left: 50px;
 			}
 			h3{
 				color: white;
 			}
+			#navbar{
+				background-color: black;
+				margin: 0;
+				padding: 0;
+				height: 40px;
+				top:0;
+				left:0;
+				width: 100%;
+				text-align: center;
+				line-height: 40px;
+			}	
 			#content{
 				padding-left: 50px;
 			}
 			#footer{
 				/*background-image: url("tape.jpg");*/
 				background-color: black;
+				height: 40px;
 				position: fixed;
 				bottom:0;
 				left:0;
 				width: 100%;
 				text-align: center;
+				line-height: 40px;
 				font-size: 17px;
-				color: gray;
+				font-weight: bold;
+				padding-top: 10px;
 			    text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+			}
+			#footer a{
+				padding: 0px 10px;
+				border: 1px white;
+			}	
 				
-			}			
 		</style>
 	</head>
 	<header>
@@ -64,19 +81,20 @@
 		</nav>-->
 	</header>
 	<body>
+		<div id="navbar">
+			<img style="border: 3px solid gray;" align="left" src="cds.png" height="34" >
+			<h1 align="left">Chris Ma</h1>
+		</div>
 		<div id="content">
-			<img align="right" src="cds.png" width="300" >
-			<h1>Chris Ma's Projects</h1>
-			<h3>My Projects</h3>
-			<ul>
-				<li><a href="http://chrisma1.github.io/FOCUS" title="A simplistic work timer based on the Pomodoro Technique.">FOCUS</a></li>
-			</ul>
-			<br>
-			<h3>AP Computer Science Projects</h3>
+			
+			
+			<h3>Programming Projects</h3>
+
 			Built with <a href="http://processing.org" title="Processing" target="_blank">Processing</a> 
 			and <a href="http://processingjs.org" title="Processing.js" target="_blank">Processing.js</a>
 			</p>
 			<ul>
+				<li><a href="http://chrisma1.github.io/FOCUS" title="A simplistic work timer based on the Pomodoro Technique.">FOCUS</a></li>
 				<li><a href="http://chrisma1.github.io/OriginalDesign" title="OriginalDesign">Original Design</a></li>
 				<li><a href="http://chrisma1.github.io/AsteroidsGame" title="AsteroidsGame">Asteroids Game</a></li>
 				<li><a href="http://chrisma1.github.io/Starfield" title="Starfield">Starfield</a></li>
@@ -88,14 +106,12 @@
 			</ul>
 			<br>
 
-			<p><a href="http://github.com/ChrisMa1/" title="Github - ChrisMa1" target="_blank">Chris's GitHub</a></p>
-
-			<p><a href="https://www.khanacademy.org/profile/christophergw07/projects" title="Khanacademy" target="_blank">Chris Ma on Khanacademy</a></p>
-			<p>	
+			
 		</div>
-		<div id="footer">
-			<p>This test website is janky still, 
-				email me suggestions at <a style="text-decoration: none;" href="mailto:christophergw07@gmail.com">christophergw07@gmail.com</a>.</p>
-		</div>
+		<nav id="footer">
+			<a href="https://www.khanacademy.org/profile/christophergw07/projects" title="Khanacademy" target="_blank"><img src="KAicon.png" width="30" ></a>
+			<a href='mailto:chris.ma@berkeley.edu'><img src="email.png" width="30" ></a>       
+			<a href="http://github.com/ChrisMa1/" title="Github - ChrisMa1" target="_blank"><img src="GHicon.png" width="30" ></a>   
+		</nav>
 	</body>
 </html>
