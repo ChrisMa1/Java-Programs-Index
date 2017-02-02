@@ -6,53 +6,73 @@
 		<base target="_blank">
 		<style type="text/css">
 			body {
-			  /*background-color: #333;*/
-			  height: 100%;
-			  background-image: url('wallpaper.jpg');
-			  background-size: cover;
-			  line-height: 120%;
-			  font-family: Georgia, Arial, sans-serif;
-			  font-size: 16px; 
-			  color: #bbb;
-			  text-decoration: none;
+				height: 100%;
+				margin:0;
+				padding:0;
+				/*background-color: white;*/
+				/*background-color: #333;*/
+				background-image: url('wallpaper.jpg');
+				background-size: cover;
+				
+				font-family: Georgia, Arial, sans-serif;
+				font-size: 1em; 
+				color: #bbb;
+		  		text-decoration: none;
 			}
 			html {
-			height: 100%;
+				height: 100%;
+				padding: 0;
+				margin: 0;
 			}
 			a, a:link, a:visited, a:active { 
 				color: #bcbcbc;
 				text-decoration: none;
+				margin:0;
 			}
-			a:hover {
-				color: #efefef; transition: 0.5s;
+			#content a:hover {
+				font-size: 1.1em; color: #efefef; transition: 0.5s;
 			}
 			h1 {
 				font-family: "Segoe UI", Arial, Verdana, sans-serif;
-				width: 100%; letter-spacing: 0.1em;
-				margin-bottom: 1em; font-size: 1.5em;
+				letter-spacing: 0.1em;
+				font-size: 1.2em;
 				color: white;
-				padding-left: 10px;
+				margin:0;
+				/*padding: 10px;*/
 			}
 			h3{
 				color: white;
+				font-weight: ;
 			}
-			#navbar{
-				background-color: black;
+			ul{
+				list-style-type: none;
+			}
+			#navbar ul{
+				list-style-type: none;
 				margin: 0;
-				padding: 0;
-				height: 40px;
-				top:0;
-				left:0;
-				width: 100%;
+    			padding: 0;
+    			overflow: hidden;
+    			background-color: #000;
+			}
+			#navbar li{
+				float: left;
+			}
+			#navbar li a, h1{
+				display: block;
 				text-align: center;
-				line-height: 40px;
-			}	
+				vertical-align: bottom;
+				padding: 10px 14px;
+			}
+			.active{
+				background-color: green;
+			}
 			#content{
-				padding-left: 50px;
+				text-align: center;
+				line-height: 130%;
 			}
 			#footer{
-				/*background-image: url("tape.jpg");*/
 				background-color: black;
+				border-top: 5px white;
 				height: 40px;
 				position: fixed;
 				bottom:0;
@@ -63,30 +83,23 @@
 				font-size: 17px;
 				font-weight: bold;
 				padding-top: 10px;
-			    text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
 			}
 			#footer a{
 				padding: 0px 10px;
-				border: 1px white;
 			}	
-				
 		</style>
 	</head>
-	<header>
-		<!--<nav>
-			<ul>
-			<li><a href="http://chrisma1.github.io/projects/" ><img src="cds.png" width="40" border-width="2"></a></li>
-			<li><a href="http://chrisma1.github.io/projects/" ><h1>Chris Ma's Projects</h1></a></li>
-			</ul>
-		</nav>-->
-	</header>
+
 	<body>
-		<div id="navbar">
-			<h1 align="left">Chris Ma</h1>
-		</div>
+		<nav id="navbar" class="navbar navbar-static-top">
+				<ul>
+					<li href="http://chrisma1.github.io"><h1 class="active">Chris Ma</h1></li>
+					<li><a>Programming Projects</a></li>
+				</ul>
+		<br>
+		<br>
+		</nav>
 		<div id="content">
-			
-			
 			<h3>Programming Projects</h3>
 
 			Built with <a href="http://processing.org" title="Processing" target="_blank">Processing</a> 
@@ -104,8 +117,9 @@
 				<li><a href="http://chrisma1.github.io/Lightning" title="Lightning">Lightning</a></li>
 			</ul>
 			<br>
-
-			
+			<br>
+			<br>
+			<br>
 		</div>
 		<nav id="footer">
 			<a href="https://www.khanacademy.org/profile/christophergw07/projects" title="Chris Ma on Khanacademy" target="_blank"><img src="KAicon.png" width="30" ></a>
