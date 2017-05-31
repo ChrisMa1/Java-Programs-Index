@@ -65,6 +65,7 @@
 			#content{
 				text-align: center;
 				line-height: 130%;
+				padding: 200;
 			}
 			#footer{
 				background-color: black;
@@ -83,24 +84,61 @@
 			#footer a{
 				padding: 0px 10px;
 			}	
+			#KeyShotVR{
+				margin:auto;
+			}
 		</style>
-	</head>
+		<script type="text/javascript" src="Oblique Winery_VR.18/files/KeyShotVR.js"></script>
+	    <script type="text/javascript">
+	      var keyshotVR;
 
+	      function initKeyShotVR() {
+	        var nameOfDiv = "KeyShotVR";
+	        var folderName = "Oblique Winery_VR.18";
+	        var viewPortWidth = 800;
+	        var viewPortHeight = 600;
+	        var backgroundColor = "#FFFFFF";
+	        var uCount = 25;
+	        var vCount = 1;
+	        var uWrap = true;
+	        var vWrap = true;
+	        var uMouseSensitivity = -0.0694444;
+	        var vMouseSensitivity = 1;
+	        var uStartIndex = 12;
+	        var vStartIndex = 0;
+	        var minZoom = 1;
+	        var maxZoom = 1;
+	        var rotationDamping = 0.96;
+	        var downScaleToBrowser = true;
+	        var addDownScaleGUIButton = false;
+	        var downloadOnInteraction = false;
+	        var imageExtension = "jpg";
+	        var showLoading = true;
+	        var loadingIcon = "ks_logo.png"; // Set to empty string for default icon.
+	        var allowFullscreen = true; // Double-click in desktop browsers for fullscreen.
+	        var uReverse = false;
+	        var vReverse = false;
+	        var hotspots = {};
+	        
+	        keyshotVR = new keyshotVR(nameOfDiv,folderName,viewPortWidth,viewPortHeight,backgroundColor,uCount,vCount,uWrap,vWrap,uMouseSensitivity,vMouseSensitivity,uStartIndex,vStartIndex,minZoom,maxZoom,rotationDamping,downScaleToBrowser,addDownScaleGUIButton,downloadOnInteraction,imageExtension,showLoading,loadingIcon,allowFullscreen,uReverse,vReverse,hotspots);
+	      }
+
+	      window.onload = initKeyShotVR;
+	    </script>
+	</head>
 	<body>
 		<div class="navbar">
-			<a class="active" href="index.html">Home</li>
+			<a href="index.html">Home</li>
 			<a href="programs.html">Coding Projects</a></li>
-			<a href="engepx.html">Engineering Projects</a></li>
+			<a class="active" href="engepx.html">Engineering Projects</a></li>
 			<br>
 			<br>
 		</div>
 		<div id="content">
-			<br>
-			<br>
-			<h1>Chris Ma</h1>
-			<br>
-			<h3><a href="programs.html">Coding Projects</a></h3>
-			<h3><a href="engexp.html">Engineering Projects</a></h3>
+			<h2>Oblique Winery Render</h2>
+		    <p>Drag to Rotate!</p>
+		    <p>Double-Click for Fullscreen</p>
+		    <div id="KeyShotVR"></div>
 			<br>
 			<br>
 			<br>
