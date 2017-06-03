@@ -1,0 +1,82 @@
+body {
+	height: 100%;
+	margin:0;
+	padding:0;
+	/*background-color: white;*/
+	/*background-color: #333;*/
+	background-image: url('bbad.png');
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: Consolas, Arial, sans-serif;
+	font-size: 1em; 
+	color: #bbb;
+	text-decoration: none;
+}
+html {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+a, a:link, a:visited, a:active { 
+	color: #bcbcbc;
+	text-decoration: none;
+	margin:0;
+}
+#content{
+	text-align: center;
+	line-height: 130%;
+	padding: 75px;
+}
+#content a:hover {
+	color: #efefef; transition: 0.5s;
+}
+h1 {
+	font-family: "Segoe UI", Arial, Verdana, sans-serif;
+	letter-spacing: 0.1em;
+	font-size: 2.0em;
+	color: white;
+	margin:0;
+	/*padding: 10px;*/
+}
+h3{
+	color: white;
+	font-weight: ;
+}
+ul{
+	list-style-type: none;
+}
+.navbar {
+	overflow: hidden;
+	background-color: #000;
+}
+.navbar a {
+	float: center;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px 16px;
+}
+.navbar a.active{
+	background-color: blue;
+}
+#footer{
+	background-color: black;
+	border-top: 5px white;
+	height: 40px;
+	position: fixed;
+	bottom:0;
+	left:0;
+	width: 100%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 17px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+#footer a{
+	padding: 0px 10px;
+}	
+#KeyShotVR{
+	margin:auto;
+}
