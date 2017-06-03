@@ -4,7 +4,7 @@ body {
 	padding:0;
 	/*background-color: white;*/
 	/*background-color: #333;*/
-	background-image: url('bbad.png');
+	background-image: url('brba.png');
 	background-size: cover;
 	background-attachment: fixed;
 	font-family: Consolas, Arial, sans-serif;
@@ -73,10 +73,12 @@ ul{
 	font-size: 17px;
 	font-weight: bold;
 	padding-top: 10px;
+	z-index: 100;
 }
 #footer a{
 	padding: 0px 10px;
 }	
 #KeyShotVR{
 	margin:auto;
+	z-index: 10;
 }
